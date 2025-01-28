@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  	<meta charset="UTF-8">
+    
+    <style>
+
+    body{
+      /*настраиваем шрифт*/
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*общие настройки сетки*/
+    .grid {
+      
+      /*подключаем сетку*/
+      display: grid;
+      /*формируем по 4 одинаковых строки и столбца*/
+      grid-template-columns: repeat(2, 110px);
+      grid-template-rows: repeat(4, 50px);
+      height: 100px;
+      width: 230px;
+    } 
+
+    /*внешний вид ячеек*/
+    .grid > * {
+      /*фоновый цвет*/
+      background-color: #d9ddf8;
+      /*скругление углов*/
+      border-radius: 5px;
+      /*расстояние от одной границы ячейки до другой*/
+      margin: 1px;
+      color:#1f1d8b;
+    }
+
+    /* задаём размеры кнопки и размер текста на кнопке  */
+      button {
+        font-size: 12px;
+      height: 40px;
+      width: 100px;
+    }
+
+
+	
+    </style>
+  </head>
+  <body>
+  	<!-- создаём кнопку на странице -->
+    
+    <div class="grid">
+    <button id="logs2">go to MVRP-map </button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup2.js"></script>
+     <button id="logs3">go to РМЛ </button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup3.js"></script>
+    
+    <button id="logs4">request</button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup4.js"></script>
+    <button id="logs5">result</button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup5.js"></script>
+    <button id="logs6">response</button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup6.js"></script>
+    
+    <button id="logs8">shared calendar</button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup8.js"></script>
+    <button id="logs7">analyze route</button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup7.js"></script>
+    <button id="compare">compare ids</button>
+    <!-- подключаем скрипт, который обработает нажатие на эту кнопку -->
+    <script src="popup9.js"></script>
+    
+    
+    </div>
+  </body>
+</html>
